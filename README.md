@@ -1,4 +1,8 @@
 # Iris Flower Data Analysis
-In this project, we will be analysing iris flower data set to classify different species into their respective classes. 
+In this project, we will be analysing iris flower data set to classify different species into their respective classes. The iris flower dataset consists of 150 entries from 3 different species, 50 samples from each specie. The species are setosa, versicolor and virginica. There are four numerical feature columns and one column which contains categorical variable or targets.
+
 ## How to get the dataset?
-Either download from kaggle website onto your local machine or import dataset from sklearn. 
+Either download from kaggle website or UCI Machine Learning repository onto your local machine or import dataset provided by sklearn. 
+
+## Project Directory 
+### EDA
