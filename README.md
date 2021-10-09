@@ -14,5 +14,12 @@ The project directory consists of following jupyter notebook files:
 * Statistical testing includes Univariate and Bivariate testing. In Univariate testing, a 'box plot' was made to measure the variability of the data. Then we measured degree of asymetery or skewness and kurtosis from different features. This gave us some insights about the data such as we found out that features "petal length" and "petal width" are not normally distributed and they have strong skewness and significant excess kurtosis.
 * Bivariate testing includes measure of correlation between the features with the help of "pearson r correlation coefficient". This was depicted with the help of a nice heat map plot. 
 
-2. Machine Learning Classifiers
-*
+2. Machine_Learning_Classifiers
+* First the dataset is splitted into train and test parts. 25% of the data is used for testing the model while 75% is used to train the model. 
+* Differnt classical machine learning approaches such as Logistic regression, Naive Bayes Classifier, K nearest neighbors, support vector machines, and ensemble techniques such as random forest is applied on the train set to train the model. A grid search algorithm is also used to find best hyperparameters for classifiers. 
+* Some important metrics including classification_report from sklearn.metrics and confusion_matrix is used to check the performance of the model. 
+* There are some pros and cons of each classifiers. In a nutshell, classifiers including logistic regression and Random forest works best for this use case.  
+
+*Note: 
+<br>
+In the upcoming tasks, a new metric "roc_auc_curve" is used to compare the performace of different classifiers with the help of a graph. 
