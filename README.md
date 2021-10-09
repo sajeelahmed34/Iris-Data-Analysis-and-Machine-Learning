@@ -10,6 +10,9 @@ The project directory consists of following jupyter notebook files:
 * Machine_Learning_Classifiers
 
 1. EDA_and_Statistical_Testing
-* In EDA and Statistical Testing, we will be first exploring the dataset with the help of visualization tools such as Matplotlib and seaborn library. Before EDA, we need to make   sure that our data must be clean an dit should not have outliers and anomalies. After getting familiar with the data, an exploratory data analysis was done using pairplots and density plot of the different features and species. 
+* In EDA and Statistical Testing, we will be first exploring the dataset with the help of visualization tools such as Matplotlib and seaborn library. Before EDA, we need to make   sure that our data must be clean and it should not have outliers and anomalies. After getting familiar with the data, an exploratory data analysis was done by making pairplots and density plot for different features and species. 
+* Statistical testing includes Univariate and Bivariate testing. In Univariate testing, a 'box plot' was made to measure the variability of the data. Then we measured degree of asymetery or skewness and kurtosis from different features. This gave us some insights about the data such as we found out that features "petal length" and "petal width" are not normally distributed and they have strong skewness and significant excess kurtosis.
+* Bivariate testing includes measure of correlation between the features with the help of "pearson r correlation coefficient". This was depicted with the help of a nice heat map plot. 
 
-
+2. Machine Learning Classifiers
+*
