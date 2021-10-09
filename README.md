@@ -10,6 +10,8 @@ The project directory consists of following jupyter notebook files:
 * Machine_Learning_Classifiers
 
 1. EDA_and_Statistical_Testing
+2. <br>
+3. <br>
 In EDA and Statistical Testing, we will be first exploring the dataset with the help of visualization tools such as Matplotlib and seaborn library. Before EDA, we need to make sure that our data must be clean an dit should not have outliers and anomalies. After getting familiar with the data, an exploratory data analysis was done using pairplots and density plot of the different features and species. 
 
 
