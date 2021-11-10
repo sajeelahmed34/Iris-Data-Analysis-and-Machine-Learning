@@ -1,9 +1,3 @@
-<img src="images/keras.png" width=100>
-
-<img src="images/si514-removebg-preview.png">
-
-<img src="images/esp32_dev.jpg">
-
 # Iris Flower Data Analysis
 In this project, we will be analysing iris flower data set to classify different species into their respective classes. The iris flower dataset consists of 150 entries from 3 different species, 50 samples from each specie. The species are setosa, versicolor and virginica. There are four numerical feature columns and one column which contains categorical variable or targets.
 
