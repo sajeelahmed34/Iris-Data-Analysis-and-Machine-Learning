@@ -1,5 +1,5 @@
 <p align="center">
-  <img src='images/iris-python.png'>
+  <img src='images/iris-python.png' width=600>
 </p>
 
 # Iris Flower Data Analysis
