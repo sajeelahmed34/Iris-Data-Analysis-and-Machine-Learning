@@ -1,29 +1,64 @@
+# Iris flower species classification
+
+## Contents
+  * [Introduction](#introduction)
+  * [Dataset Installation](#dataset)
+  * [Project Directory](#directory)
+  * [Summary](#summary)
+  * [Resources](#resources)
+
+## Introduction: <a name="introduction"></a>
+The dataset consists of 50 samples from each of three species of Iris (Iris Setosa, Iris virginica, and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. This dataset became a typical test case for many statistical classification techniques in machine learning.
+
+## Dataset Installation <a name="dataset"></a>
+There are multiple ways to download the dataset, either you can download it from the [kaggle website](https://www.kaggle.com/arshid/iris-flower-dataset) or [UCI Machine Learning repository](https://archive.ics.uci.edu/ml/datasets/Iris) into your local machine or import dataset provided by sklearn. 
+
+## Project Directory <a name="directory"></a>
+The project is developed in jupyter notebook and the directory contains the following notebook files:
+```
+1. EDA_and_statistical_testing.ipynb
+```
+This file contains exploratory data analysis and statistical testing on the iris dataset. in EDA, key insights between the feature columns is observed with the help or `pairplot`, `scatterplot` and `histplot` using `seaborn` library.
+<br>
+<br>
+With the help of univariate and bivariate testing, key insights from same and between two feature columns is observed. `BOX PLOT` is applied on the feature columns to measure the variability of the data and outliers. 
 <p align="center">
-  <img src='images/iris-python.png' width=600>
+  <img src='images/box-plot-2.png' width=600>
 </p>
 
-# Iris Flower Data Analysis
-In this project, we will be analysing iris flower data set to classify different species into their respective classes. The iris flower dataset consists of 150 entries from 3 different species, 50 samples from each specie. The species are setosa, versicolor and virginica. There are four numerical feature columns and one column which contains categorical variable or targets.
 
-## How to get the dataset?
-Either download from kaggle website or UCI Machine Learning repository onto your local machine or import dataset provided by sklearn. 
+Other testing includes measurement of skewness, kurtosis. This gave us some insights about the data such as we found out that features "petal length" and "petal width" are not normally distributed and they have strong skewness and significant excess kurtosis.
 
-## Project Directory 
-The project directory consists of following jupyter notebook files:
-* EDA_and_Statistical_Testing 
-* Machine_Learning_Classifiers
+```
+2. Machine_Learning_Classifiers.ipynb
+```
+This file contains application and evaluation of different machine learning classification models on the iris flower dataset. The following listed machine learning models are trained and applied on the iris dataset. 
 
-1. EDA_and_Statistical_Testing
-* In EDA and Statistical Testing, we will be first exploring the dataset with the help of visualization tools such as Matplotlib and seaborn library. Before EDA, we need to make   sure that our data must be clean and it should not have outliers and anomalies. After getting familiar with the data, an exploratory data analysis was done by making pairplots and density plot for different features and species. 
-* Statistical testing includes Univariate and Bivariate testing. In Univariate testing, a 'box plot' was made to measure the variability of the data. Then we measured degree of asymetery or skewness and kurtosis from different features. This gave us some insights about the data such as we found out that features "petal length" and "petal width" are not normally distributed and they have strong skewness and significant excess kurtosis.
-* Bivariate testing includes measure of correlation between the features with the help of "pearson r correlation coefficient". This was depicted with the help of a nice heat map plot. 
+* Naive Bayes classifier 
+* Logistic regression 
+* K-nearest Neighbors and hyperparameter tuning using GridSearchCV
+* Support Vector Machines 
+* Decision Trees, and 
+* Random Forest 
 
-2. Machine_Learning_Classifiers
-* First the dataset is splitted into train and test parts. 25% of the data is used for testing the model while 75% is used to train the model. 
-* Differnt classical machine learning approaches such as Logistic regression, Naive Bayes Classifier, K nearest neighbors, support vector machines, and ensemble techniques such as random forest is applied on the train set to train the model. A grid search algorithm is also used to find best hyperparameters for classifiers. 
-* Some important metrics including classification_report from sklearn.metrics and confusion_matrix is used to check the performance of the model. 
-* There are some pros and cons of each classifiers. In a nutshell, classifiers including logistic regression and Random forest works best for this use case.  
+### Metrics used? 
+Training and testing accuracy is calculated along with a `classification_report` and `confusion_matrix` from the `sklearn`. The following figure depicts a general idea of confusion matrix came out from the results of test data after logistic regression. For more understanding, please follow the notebook. 
+<p align="center">
+  <img src='images/confusion-matrix.png' width=400>
+</p>
 
-*Note: 
-<br>
-In the upcoming tasks, a new metric "roc_auc_curve" is used to compare the performace of different classifiers with the help of a graph. 
+The model is misclassifying only one data point in virginica(label "2") although the true class is versicolor(label: "1"). The accuracy came out was 97.37%.
+
+## Summary <a name="summary"></a>
+
+| Model | Train accuracy | Test accuracy | Remarks |
+| --- | --- | --- | --- |
+| Naive Bayes classifier | 100%  |  | SDA |
+| Logistic regression | 97.37%  | SDA |  |
+| K-nearest Neighbors | 94.74%   | SDA |  |
+| Support Vector Machines | 89.74%   | SDA |  |
+| Decision Trees | - | SDA |  |
+| Random Forest | 94.74% | SDA |  |
+
+# Resources:  <a name="resources"></a>
+1. [Kaggel Resources](https://www.kaggle.com/kumarsatwik/beginner-iris-dataset-classification/notebook)
